@@ -1,0 +1,120 @@
+/* .home-content
+{
+  height: 200vh; */
+  /* width: 100vw; */
+  /* display: flex;
+}
+
+.left-content
+{
+  width: 50%;
+  height: 100%;
+  
+  padding: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.right-content
+{
+  /* width: 50%;
+  height: 100%;
+ 
+  position: scroll; */
+
+
+
+
+.home-content
+{
+  /* height: 200vh; */
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.left-content
+{
+  width: 50%;
+  height: 1000px;
+  
+  padding: 50px;
+  position: sticky;
+}
+
+/* .left-content-title-1
+{
+
+  position: sticky;
+  top: 50px;
+  font-size: 50px;
+  color: grey;
+}
+
+
+.left-content-title-2
+{
+  position: sticky;
+  top: 170px;
+  font-size: 40px;
+}
+
+.left-content-title-3
+{
+  position: sticky;
+  top: 240px;
+  left: 80px;
+
+  padding-left: 50px;
+  font-size: 40px;
+} */
+
+.left-content-title-1 {
+  /* position: sticky; */
+  top: 50px;
+  font-size: 50px;
+  color: grey;
+ 
+}
+
+.left-content-title-2 {
+  /* position: sticky; */
+  top: 120px; /* Adjusted to ensure no overlap with title 1 */
+  font-size: 40px;
+  
+}
+
+.left-content-title-3 {
+  /* position: sticky; */
+  top: 300px; /* Adjusted to ensure no overlap with title 2 */
+  left: 80px;
+  padding-left: 50px;
+  font-size: 40px;
+  /* z-index: 3; Lower z-index than title 2 */
+}
+
+.left-sticky
+{
+  position: sticky;
+  top:150px;
+}
+
+
+.right-content
+{
+
+  width: 50%;
+  /* height: 1000px;
+
+  position: scroll; */
+
+  padding-right: 0;
+}
+
+.image
+{
+  width: 750px;
+  height: 1000px;
+  position: scroll;
+
+}
