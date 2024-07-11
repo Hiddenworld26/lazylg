@@ -10,7 +10,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:transparent; /* Default background color */
+  background-color: transparent; /* Default background color */
   padding: 0.5rem 1rem;
   height: 40px;
   position: fixed;
@@ -52,6 +52,22 @@ html, body {
   align-items: center;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .Header {
+    padding: 0.5rem;
+  }
+
+  .menu-toggle {
+    font-size: 1.5rem;
+  }
+
+  .right-icons {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
 /* Media query for larger screens */
 @media (min-width: 768px) {
   .navbar-menu {
@@ -68,5 +84,21 @@ html, body {
 
   .navbar-right {
     margin-left: auto;
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  .Header {
+    padding: 0.25rem;
+  }
+
+  .menu-toggle {
+    font-size: 1.25rem;
+  }
+
+  .right-icons {
+    margin-left: 0.25rem;
+    font-size: 1.25rem;
   }
 }

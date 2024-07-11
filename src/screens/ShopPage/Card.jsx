@@ -1,37 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Card.css';
-
-import image1 from './image1.webp';
-import image2 from './image2.webp';
+import './Card2.css';
 
 function Card() {
-    const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-  
-  return (
-    <div
-    className="product-card"
-    onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave}
-  >
-    <img
-      src={isHovered ? `${image1}` :  `${image2}` }
-      alt="Product"
-      className="product-image"
-    />
-    <div className="caption">
-      {isHovered ? 'It suppports Floating Tencel' : 'Floating Shirt'}
-    </div>
-  </div>
-);
-  
+    return (
+        <div className="product-card">
+            <img
+                src="./image1.webp"
+                alt="Product"
+                className="product-image"
+            />
+            <div className="caption">
+                Floating Shirt
+            </div>
+        </div>
+    );
 }
 
-export default Card;
+function Card2() {
+    return (
+        <div className="card-container">
+            <Card />
+            <Card />
+        </div>
+    );
+}
+
+export default Card2;
